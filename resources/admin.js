@@ -1,9 +1,9 @@
 async function callApi(path, method, body) {
     if(method === "GET"){
-        const response = await fetch(`https://chideranewwebapi.herokuapp.com/api${path}`);
+        const response = await fetch(`https://decagon-week5-task-a.herokuapp.com/api${path}`);
         return await response.json();
     } else {
-        const response = await fetch(`https://chideranewwebapi.herokuapp.com/api${path}`, {
+        const response = await fetch(`https://decagon-week5-task-a.herokuapp.com/api${path}`, {
             method: method,
             body: JSON.stringify(body),
             headers: {
