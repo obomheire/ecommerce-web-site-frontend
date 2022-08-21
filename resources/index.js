@@ -1,7 +1,9 @@
 let productElPost=document.getElementById('product-content')
 
 async function fetchnewapi() {
-    let response=await fetch('https://decagon-week5-task-a.herokuapp.com/api')
+    let response = await fetch(
+      "https://ecommerce-web-site-server.herokuapp.com/api"
+    );
     let data=await response.json()
     let dataArr=data['data']
 
